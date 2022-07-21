@@ -9,6 +9,9 @@ module.exports = {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans],
         play: ['Play', 'sans-serif'],
       },
+      gridTemplateColumns: {
+        '2-iauto': 'auto 1fr',
+      },
     },
   },
   variants: {
