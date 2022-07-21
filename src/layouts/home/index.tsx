@@ -5,7 +5,7 @@ const HomeLayout = ({ setup, children }) => {
   return (
     <>
       <Head>
-        <title>{setup.title}</title>
+        <title>PONZACENIO | {setup.title}</title>
       </Head>
       <div className="min-h-screen py-10 2xl:py-20 bg-gradient-to-l from-gray-900 to-gray-800">
         {children}
