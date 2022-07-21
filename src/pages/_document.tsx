@@ -18,6 +18,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Play&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
         </Head>
         <body className="antialiased">
           <Main />
