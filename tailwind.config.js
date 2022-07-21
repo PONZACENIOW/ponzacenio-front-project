@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-        play: ['Play', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
       },
       gridTemplateColumns: {
         '2-iauto': 'auto 1fr',
