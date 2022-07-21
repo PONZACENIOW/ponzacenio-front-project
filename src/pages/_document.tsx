@@ -9,8 +9,16 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="es">
         <Head>
+          <meta
+            httpEquiv="Content-Security-Policy"
+            content="connect-src 'self'"
+          />
+          <meta
+            name="description"
+            content="Sitio de presentación sobre Cesar Antonio Ponce de León Piza relacionado con proyectos, actividades, experiencias, conocimientos, etc."
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
