@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .home-swiper .swiper-pagination-bullet {
+    @apply bg-amber-300 rounded-3xl;
+  }
+
+  .home-swiper .swiper-pagination-bullet-active {
+    @apply w-4;
+  }
+
+  .home-swiper .swiper-slide{
+    @apply h-auto;
+  }
+  
+}
