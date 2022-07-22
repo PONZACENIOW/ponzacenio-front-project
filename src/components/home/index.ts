@@ -1,0 +1,6 @@
+export { Divider } from './divider'
+export { AptitudesContainer } from './aptitudes'
+export { KnowledgeCard, KnowledgeContainer } from './knowledge'
+export { ProjectsCard, ProjectsContainer } from './projects'
+export { PersonalContainer } from './personal'
+export { EducationContainer } from './education'
