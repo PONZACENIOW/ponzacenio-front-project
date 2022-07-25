@@ -1,4 +1,13 @@
-export const Divider = ({ setup = { title: '' }, icon = <></> }) => {
+interface Setup {
+  title: string
+}
+
+type DividerProps = {
+  setup: Setup
+  icon: JSX.Element
+}
+
+export const Divider = ({ setup, icon }: DividerProps) => {
   return (
     <div className="mx-5 sm:mx-20 lg:mx-40 2xl:mx-80  mt-12 2xl:mt-20 relative grid sm:grid-cols-3 justify-items-start">
       <div className="h-12 bg-gradient-to-l from-transparent via-gray-900 to-transparent absolute self-center w-full"></div>
