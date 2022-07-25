@@ -1,17 +1,27 @@
-export const EducationContainer = ({
-  setup = {
-    institutes: [],
-  },
-}) => {
+interface Institutes {
+  title: string
+  career: string
+  cycle: string
+}
+
+interface Setup {
+  institutes: Array<Institutes>
+}
+
+type EducationProps = {
+  setup: Setup
+}
+
+export const EducationContainer = ({ setup }: EducationProps) => {
   return (
     <div className="mx-5 sm:mx-20 lg:mx-40 2xl:mx-80 p-5 bg-slate-500/10 rounded-3xl shadow-2xl text-gray-300 mt-12 2xl:mt-20 2xl:p-10 2xl:grid 2xl:grid-cols-2 justify-items-center">
       {setup.institutes.map((e, i) => (
-        <div key={i} className="flex gap-4">
+        <div key={i} className="flex gap-4 mb-4">
           <div className="w-4 h-4 bg-amber-400/30 rounded-full grid justify-center content-center mt-1">
             <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
           </div>
           <div className="grid">
-            <span>{e.careeer}</span>
+            <span>{e.career}</span>
             <span>{e.title}</span>
             <span className="bg-black/30 shadow-2xl px-2 text-xs mt-2">
               ({e.cycle})
